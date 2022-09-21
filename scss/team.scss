@@ -1,0 +1,100 @@
+.team{
+    margin-bottom: 143px;
+    &__title{
+        margin-bottom: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        h1{
+            font-weight: 550;
+            font-size: 60px;
+            line-height: 110%;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: #303030;
+            @media (max-width: 845px) {
+                font-size: 45px;
+            }
+            @media (max-width: 595px) {
+                font-size: 30px;
+            }
+        span{
+            font-weight: 100;
+            font-style: italic;
+        }
+        }
+    }
+    &__employers{
+        display: flex;
+        justify-content: center;
+        @media (max-width: 593px) {
+            overflow-x: hidden;
+            max-width: 222px;
+            margin: 0 auto;
+        }
+        &-inner{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            column-gap: 87px;
+            transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+            @media (max-width: 593px) {
+                justify-content: flex-start;
+                flex-wrap: nowrap;
+                max-width: 222px;
+                width: 100%;
+                column-gap: 0px;
+            }
+        }
+        &-item{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            row-gap: 25px;
+            margin-bottom: 40px;
+            max-width: 222px;
+            width: 100%;
+            @media (max-width: 593px) {
+                min-width: 222px;
+            }
+            &-text{
+                h1{
+                    font-weight: 550;
+                    font-size: 30px;
+                    line-height: 110%;
+                    letter-spacing: 0.05em;
+                    color: #303030;
+                    text-align: center;
+                    margin-bottom: 6px;
+                }
+                p{
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 145%;
+                    text-transform: uppercase;
+                    color: #404040;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    &__btns{
+        display: flex;
+        column-gap: 20px;
+    }
+    &__prev,
+    &__next{
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+        &:disabled{
+            svg{
+                path{
+                    fill: #B2B2B2;
+                }
+            }
+        }
+    }
+}

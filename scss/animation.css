@@ -1,0 +1,18 @@
+.video__img {
+  max-width: 555px;
+  min-height: 436px;
+}
+
+@media (max-width: 630px) {
+  .video__img {
+    max-width: 335px;
+    min-height: 50%;
+  }
+}
+
+@media (max-width: 355px) {
+  .video__img {
+    max-width: 260px;
+    min-height: 50%;
+  }
+}

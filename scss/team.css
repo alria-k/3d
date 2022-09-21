@@ -1,0 +1,119 @@
+.team {
+  margin-bottom: 143px;
+}
+
+.team__title {
+  margin-bottom: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.team__title h1 {
+  font-weight: 550;
+  font-size: 60px;
+  line-height: 110%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #303030;
+}
+
+@media (max-width: 845px) {
+  .team__title h1 {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 595px) {
+  .team__title h1 {
+    font-size: 30px;
+  }
+}
+
+.team__title h1 span {
+  font-weight: 100;
+  font-style: italic;
+}
+
+.team__employers {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 593px) {
+  .team__employers {
+    overflow-x: hidden;
+    max-width: 222px;
+    margin: 0 auto;
+  }
+}
+
+.team__employers-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  column-gap: 87px;
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@media (max-width: 593px) {
+  .team__employers-inner {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    max-width: 222px;
+    width: 100%;
+    column-gap: 0px;
+  }
+}
+
+.team__employers-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 25px;
+  margin-bottom: 40px;
+  max-width: 222px;
+  width: 100%;
+}
+
+@media (max-width: 593px) {
+  .team__employers-item {
+    min-width: 222px;
+  }
+}
+
+.team__employers-item-text h1 {
+  font-weight: 550;
+  font-size: 30px;
+  line-height: 110%;
+  letter-spacing: 0.05em;
+  color: #303030;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.team__employers-item-text p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 145%;
+  text-transform: uppercase;
+  color: #404040;
+  text-align: center;
+}
+
+.team__btns {
+  display: flex;
+  column-gap: 20px;
+}
+
+.team__prev, .team__next {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.team__prev:disabled svg path, .team__next:disabled svg path {
+  fill: #B2B2B2;
+}

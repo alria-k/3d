@@ -1,0 +1,155 @@
+.weare{
+    display: grid;
+    grid-template-areas:
+    'top top top img img'
+    'bottom bottom bottom img img'
+    ;
+    margin-bottom: 214px;
+    @media (max-width:885px){
+        margin-bottom: 130px;
+    }
+    @media (max-width:760px){
+        grid-template-areas:
+        'top top top top top'
+        'img img img img img'
+        'bottom bottom bottom bottom bottom'
+        ;   
+        justify-content:center;
+        align-items: center;
+    }
+    &__top-box{
+        grid-area: top;
+        display: flex;
+        margin-bottom: 64px;
+        @media (max-width:965px){
+            margin-bottom: 44px;
+        }
+        &-h1{
+            writing-mode: vertical-rl;
+            transform: scale(-1);
+            font-weight: 500;
+            font-size: 80px;
+            line-height: 88px;
+
+            @media (max-width:1100px){
+                font-size: 60px;
+                line-height: 68px;
+                text-align: end;
+            }
+            @media (max-width:965px){
+                font-size: 50px;
+                line-height: 53px;
+                text-align: end;
+            }
+            @media (max-width:430px){
+                font-size: 24px;
+                line-height: 26px;
+            }
+        }
+        &-subtitle{
+            margin-left: 35px;
+            @media (max-width:965px){
+                margin-left: 25px;
+            }
+            @media (max-width:364px){
+                margin-left: 19px;
+            }
+        }
+        &-h2{
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: 50px;
+            line-height: 55px;
+            margin-bottom: 31px;
+            span{
+                font-style: italic;
+                font-weight: 300;
+            }
+            @media (max-width:1100px){
+                font-size: 40px;
+                line-height: 45px;
+                margin-bottom: 25px;
+            }
+            @media (max-width:965px){
+                margin-bottom: 20px;
+            }
+            @media (max-width:430px){
+                font-size: 24px;
+                line-height: 26px;
+            }
+        }
+        &-p{
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 26px;
+            @media (max-width:1100px){
+                font-size: 16px;
+                line-height: 22px;
+            }
+            @media (max-width:965px){
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+    }
+    &__img{
+        grid-area: img;
+        align-self: end;
+        justify-self: end;
+        max-width: 521px;
+        @media (max-width:1100px){
+            max-width: 485px;
+        }   
+        @media (max-width:965px){
+            max-width: 420px;
+        }
+        @media (max-width:805px){
+            max-width: 380px;
+        }
+        @media (max-width:760px){
+            align-self: center;
+            justify-self: center;
+            margin-bottom: 90px;
+        }
+        @media (max-width:430px){
+            max-width: 340px;
+        }
+        @media (max-width:364px){
+            max-width: 320px;
+        }
+    }
+    &__bottom-box{
+        grid-area: bottom;
+    }
+    &__bottom{
+        &-text{
+            display: flex;
+            align-items: center;
+            &:not(:nth-child(5)){
+                margin-bottom: 19px;
+            }
+            &-p{
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 26px;
+                letter-spacing: 0.05em;
+                text-transform: uppercase;
+                margin-left: 12px;
+
+                @media (max-width:1100px){
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+                @media (max-width:430px){
+                    font-size: 14px;
+                    line-height: 20px;
+                    margin-left: 6px;
+                }
+                @media (max-width:355px){
+                    font-size: 12px;
+                    line-height: 18px;
+                }
+            }
+        }
+    }
+}
